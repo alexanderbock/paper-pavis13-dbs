@@ -1,0 +1,530 @@
+Vis (SciVis) 2012
+
+Reviews of submission #103: "Supporting Deep Brain Stimulation
+Interventions by Fusing Microelectrode Recordings with Imaging Data"
+
+------------------------ Submission 103, Review 1 ------------------------
+
+Reviewer:           primary
+
+Second Round Recommendation
+
+   
+
+Second Round Review Text
+
+
+Summary Rating
+
+   3  (<b>Maybe reject:</b> This paper may not be acceptable without major  changes.)
+
+Summary Review (1st review cycle)
+
+   My overall recommendation is based on the verbal comments in the reviews
+   and also reflect the numerical evaluation with an
+     average of 3.25.
+
+   The reviewers agree that some parts of the paper are too long and contain
+   too much detail making it difficult to get the essential points. With
+   respect to significance and novelty, the reviewers do not agree
+   completely. One reviewer raised the problem that the requirement analysis
+   is not deep enough to justify all design
+     decisions (a crucial argument for an application paper) and two
+   reviewers see the novelty as very limited, in particular,
+     since many other systems provide multimodal visualization and there is
+   no substantial comparison of the new method to existing one's. I consider
+   the discussion on significance and novelty as the core of the problem.
+
+   The reviewers do not fully agree on the evaluation. Clearly, the
+   evaluation does not show that the system is clinically useful and
+   effective. Thus, it is not clear that the goal stated in the introduction
+   is reached. The authors chose a pragmatic
+     approach evaluating those aspects that could be easily evaluated.
+   However, a realistic
+     test in surgery is very difficult to organize. 
+
+   Having said this, I think that the problems stated before (alone) require
+   a major not a minor revision. In particular the following arguments
+   (citations from the reviews) are essential to me.
+
+     "I would have expected a more clear analysis and formulation of the
+     requirements. What information should be exactly delivered by the
+     visualization in each phase? The canal view for instance is quite
+     unmotivated ..."
+      
+     "The visual design of the novel parts is problematic. First, fusing the
+   spatial orientation and layout of the recording electrodes with the
+     temporal signal is misleading, since the sizes of the discs in 3D space
+   cannot accurately convey the amplitude information of the electric
+     signals."
+
+     "First, compare with existing multi-modal DBS visualization systems, in
+   my opinion, the proposed system does not show any significant
+   improvement.
+     The only difference as pointed out by the authors in the related work
+     section is the incorporation of patient checks data, which is very
+     straightforward."
+
+Type of Paper
+
+   Application / Design Study
+
+Novelty
+
+   Weakly advocate for
+
+Significance
+
+   Weakly advocate for
+
+Significance/Novelty: Rating Justification
+
+   This particular and very specific problem was certainly not tackled in
+   such depth before. Deep Brain Stimulation is a frequent procedure and
+   gains importance among others because the underlying pathology occurs
+   more often but also due a proven benefit with rather low adverse effects.
+   How often the very specific settings with MER recordings is applied,
+   whether it is feasible to apply it more broadly or whether this is a
+   rather rare treatment choice is not clear to me.
+
+Significance/Novelty: How To Improve? 
+
+   Better explain how often this procedure with the specific signals occurs.
+
+Exposition and Detail
+
+   Somewhat
+
+Exposition and Detail: How To Improve?
+
+   I do not understand how a slice view of voxel data (Sect. 4.2.1) may be
+   used to determine the target location at sub-voxel accuracy. Without any
+   really smart tricks, there is only voxel information available. So what
+   is the trick to achieve a super-resolution that is not actually there.
+
+   In Sect. 4.4.3 it is first said that the uncertainty margin is set to
+   zero and letter it is explained why such a margin ins relevant. 
+
+Paper Length
+
+   Sect. 4.3.2 and 4.4.3 are rather long, the latter even more. These might
+   be written more concise and at the same time essential information should
+   be emphasized. In particular Sect. 4.4.3 needs some structuring elements,
+   such as paragraphs, lists, tables or at least emphasized words - so far
+   it is a long narrative without an obvious structure.
+
+Limitations and Drawbacks
+
+   A few minor problems: 
+   In Fig. 2, the number 1, 2, 3 are unnecessarily large and the small
+   images are too small.
+
+   Sect. 2 "based on a region-based segmentation" -> employs?
+
+   Sect. 4.2.2: the constant present -> presence?
+
+   Sect. 4.3.2: the sentence with " ... which introduces a lot of visual
+   clutter ..." is very redundant (we all know without further explanation
+   that visual clutter is not a desired state).
+
+   4.3.2: draws preattentive attention -> that is not possible. I would omit
+   the "preattentive"
+
+
+Method Evaluation 
+
+   The authors performed an informal evaluation. They had real users, namely
+   five neurosurgeons actually performing DBS. That is a strong aspect and
+   it is certainly not possible to get more of these specialized users. The
+   evaluation focussed on usability and usefulness. It is not a particularly
+   deep evaluation (that would require actual clinical use and thus poses a
+   number of challenges), but it is sufficient to assess the value.
+
+References
+
+   There are many references. Some of them are not necessary. [1,2,3] are
+   used only once and together. Reference 11 is also not necessary. That the
+   integration of biomedical data is useful is too obvious and [11] is
+   probably not a particularly important paper to clarify this.
+
+   The related work section is very well written and useful.
+
+Final Judgment: Overall rating
+
+   4  (<b>Probably accept:</b> This paper will be acceptable with minor changes.)
+
+Final Judgment: Justification
+
+   The paper represents a substantial piece of application-oriented research
+   and development in medical visualization. The paper is in general well
+   written and the whole work seems to be mature. Also most aspects are
+   tailored to the very specific problem and are as such not very useful,
+   except you consider the same problems, some aspects are more general. The
+   contextual view presented in Fig. 5 and some considerations on access
+   planning are more widely relevant.
+
+Ultimate Judgment
+
+   top 25%
+
+Expertise
+
+   3  (Expert)
+
+------------------------ Submission 103, Review 4 ------------------------
+
+Reviewer:           secondary
+
+Type of Paper
+
+   Application / Design Study
+
+Novelty
+
+   Weakly advocate for
+
+Significance
+
+   Weakly advocate for
+
+Significance/Novelty: Rating Justification
+
+   This paper presents a pretty complete application system for deep brain
+   stimulation interventions through fusing microelectrode recordings with
+   MRI/CT scanned 3D volumes. The major contribution of this application
+   paper is to cleverly convert the temporal varying MER signal into spatial
+   singles and then integrated into an interactive visualization. The
+   similar approaches can be taken for other similar situations. On the
+   other side, the techniques presented in the paper are not very difficult
+   and most are well established in visualization.
+
+Significance/Novelty: How To Improve? 
+
+   This work is closely related to the medical practice. Any concrete
+   evidence on real usage can improve the work.
+
+Exposition and Detail
+
+   Somewhat
+
+Exposition and Detail: How To Improve?
+
+   The major novel part of this paper is the part of spatial audio
+   visualization. More elaboration on how the original recorded signals are
+   resembled and converted should be provided. It is also possible that
+   improper sample may result in misrepresentation of the original signal.
+
+Paper Length
+
+   OK this part.
+
+Limitations and Drawbacks
+
+
+Method Evaluation 
+
+   The evaluation of this work was carried out through a questionnaire with
+   several neurosurgeons after they watch the show case of the system. It is
+   preferable that the system can be evaluated in real operation by the
+   neurosurgeons. Of course it is understandable that the difficulties to
+   obtain permit in clinical trial make such evaluation not easy to conduct.
+
+References
+
+   Looks sufficient
+
+Final Judgment: Overall rating
+
+   3  (<b>Borderline:</b> This paper might be acceptable with major  changes.)
+
+Final Judgment: Justification
+
+   This work presents a fairly complete application system. The choices of
+   visualization techniques are reasonable. Major innovation is the part to
+   convert the temporal signals of the probes to spatial signals. The
+   spatial audio visualization is interesting. On the other hand, such
+   system is very specific to such special type of application. So it may
+   only have limited impact to inspire other application or research.
+
+Ultimate Judgment
+
+   top 50%
+
+Expertise
+
+   2  (Knowledgable)
+
+------------------------ Submission 103, Review 2 ------------------------
+
+Reviewer:           external
+
+Type of Paper
+
+   Application / Design Study
+
+Novelty
+
+   Strongly advocate against  
+
+Significance
+
+   Strongly advocate against 
+
+Significance/Novelty: Rating Justification
+
+   This work is an incremental improvement over existing work. Compared to
+   existing systems such as Cicerone, this system incorporates patient
+   checks data into their system, which, in my opinion, is rather an
+   incremental improvement. The electrode closeup may be new. However, this
+   view is very confusing. I don't think it is an effective design
+   considering the almost indistinguishable colors and very misleading
+   transparency used. 
+
+Significance/Novelty: How To Improve? 
+
+   The closeup view may have the potential. The authors may further explore
+   how to effective visualize the overlapping regions rather than using
+   arbitrary colors and transparency to visualize the regions. One possible
+   way may be to unfold the 3D overlapping region to a 2D plane (or by
+   projection) for more accurate and unambiguous visualization.
+
+Exposition and Detail
+
+   Absolutely
+
+Exposition and Detail: How To Improve?
+
+   The exposition is clear since the techniques used are simple and
+   straightforward. 
+
+Paper Length
+
+   The paper is too long. It should be shortened considering its
+   contributions.
+
+Limitations and Drawbacks
+
+   1.	The techniques used in the paper are simple and not new. Additionally,
+   compared with existing DBS multi-modal visualization systems, the system
+   does not show a significant improvement. The only new part is the
+   incorporation of patient test information into the system, which is
+   straightforward. 
+
+   2.	The visual design of the novel parts is problematic. First, fusing the
+   spatial orientation and layout of the recording electrodes with the
+   temporal signal is misleading, since the sizes of the discs in 3D space
+   cannot accurately convey the amplitude information of the electric
+   signals. The misinterpretation of the electric signals may cause
+   undesired consequences. Second, the design of the Electrode Closeup is
+   also quite ineffective because of the arbitrary use of the colors and
+   transparency. The colors such as blue and purple are very difficult to be
+   differentiated. In addition, I don’t think the semi-transparent
+   overlapping regions (which are difficult to distinguish) can effectively
+   reveal the desired information.
+
+   3.	The evaluation is another major issue of the paper. It is far from
+   enough to demonstrate the usefulness and effectiveness of the system.
+   Directly evaluating the entire system by questionnaire is ineffective and
+   may hide the serious problem from the participants. One better to do the
+   user study is to separate the system into individual component views and
+   ask the participants to evaluate the individual views rather than the
+   entire system. After that, the entire system can be evaluated.
+   Furthermore, the feedback is unconvincing because the participants did
+   not use the system by themselves.
+
+Method Evaluation 
+
+   The provided evaluation is far from sufficient. Too short to provide any
+   valuable insight from the design study. It would be better to start the
+   evaluation by testing individual views and finally evaluate the entire
+   system. Furthermore, the evaluation is unconvincing because the
+   participants did not use the system by themselves.
+
+References
+
+   First, the references to multi-modal volume visualization are incomplete.
+   While there are numerous techniques that have been proposed in recent
+   years, the paper only reviews a few ones. Additionally, they do not
+   thoroughly compare their approach with the existing work. As the system
+   is a typical multi-modal volume visualization system, it would be
+   important to clearly indicate in the paper how the multi-modal
+   visualization techniques used in the work can be distinguished from the
+   existing techniques.
+
+Final Judgment: Overall rating
+
+   2  ( <b>Probably reject:</b> This paper is not ready for publication even with major changes.)
+
+Final Judgment: Justification
+
+   The paper describes a multi-modal volume visualization system to
+   facilitate deep brain simulation interventions. The claimed contributions
+   include a multi-modal visualization system, a fusing approach of MER data
+   with spatial data, and a user study. However, I have serious concerns
+   about these claimed contributions.
+
+   First, compare with existing multi-modal DBS visualization systems, in my
+   opinion, the proposed system does not show any significant improvement.
+   The only difference as pointed out by the authors in the related work
+   section is the incorporation of patient checks data, which is very
+   straightforward and cannot be considered as novel. Additionally, the
+   multi-modal visualization techniques used in the system are quite simple.
+   I don’t think there is sufficient novelty in the paper from either the
+   technique or the application aspect.
+
+   Second, the fusing approach of MER data with spatial data (as shown in
+   Figure 8) is very trivial. What makes worse is that the design of showing
+   the amplitude of MER signals in 3D is ineffective. Using the sizes of 3D
+   discs cannot accurately encode the MER signals due to the perspective
+   projection of volume rendering. The relative sizes between different
+   discs in 3D perceived by a user may be totally different from their real
+   relative sizes.
+
+   Third, the evaluation is unconvincing and incomplete. This part is too
+   short to reveal any insight from the design. It does not convey much
+   valuable information using this kind of questionnaire evaluation. First,
+   it is very likely that the evaluation of the system as whole hides the
+   serious problems from the participants. Second, the participants actually
+   did not use the system. They just saw how the authors used and showcased
+   the system. Without using this system, it is unlikely that the
+   participants could know the system well. Thus, I don’t think their
+   feedback is convincing.
+
+Ultimate Judgment
+
+   
+
+Expertise
+
+   3  (Expert)
+
+------------------------ Submission 103, Review 3 ------------------------
+
+Reviewer:           external
+
+Type of Paper
+
+   Application / Design Study
+
+Novelty
+
+   Strongly advocate for
+
+Significance
+
+   Strongly advocate for
+
+Significance/Novelty: Rating Justification
+
+   The paper is a well motivated and quite complete application paper/design
+   study for a system supporting Deep Brain Stimulation Interventions.
+   Although there already exist already a system (Cicerone) to support such
+   interventions several novel intervention specific visualization
+   techniques have been developed. 
+   Special attention is given to the fusion of images, measurements and
+   annotations into a common and informative visual representation of the
+   current intra-operative situation. The paper proposes several interesting
+   visualization concepts tailored for multi-source spatial and temporal
+   data.
+
+Significance/Novelty: How To Improve? 
+
+   It would be interesting if an additional visualization of brain regions
+   in the context of the canal view and/or electrode close up visualization
+   would increase acceptance and spatial orientations within these
+   visualizations. Labeled brain regions should be available at no cost, as
+   a Tailarach coordinate system has to be established anyhow during the
+   planning phase.
+
+Exposition and Detail
+
+   Somewhat
+
+Exposition and Detail: How To Improve?
+
+   The paper is well written and motivated. The methods are completely
+   described and should be reproducible by any graduate student after an
+   introductory course into medical visualization and (volume) rendering. 
+   Nevertheless, sometimes almost too much information is given (if this is
+   possible ;o) ) which distracted at least me from the real relevant
+   points..... Thus, sometime less is more and I propose to revise the paper
+   under this aspect.
+
+Paper Length
+
+   From my point of view the paper is too long and could be shorten by at
+   least one page without loosing important information or harming its
+   clarity. 
+
+   Proposals for shortening:
+   Section 4.3.1 "MER Signal Analysis" has not a direct relation to the
+   visualization. It is a preprocessing method for the signal and can be
+   replaced by any other suitable method. The authors should consider to
+   submit this data pre-processing part as separate work. 
+   The information in Section 4.1 and 4.2-4.4 is partly redundant.
+   General remark: many parts of the paper could be formulated much more
+   focussed... 
+
+
+Limitations and Drawbacks
+
+   I would have expected a more clear analysis and formulation of the
+   requirements. What information should be exactly delivered by the
+   visualization in each phase? The canal view for instance is quite
+   unmotivated from my point of view and why one needs the spatial 3D
+   context in the electrode close up visualization (Fig. 11) is also
+   unclear. 
+
+Method Evaluation 
+
+   The formulated goal of the paper (section 4, first sentence) is "[] to
+   increase efficiency and, more importantly, the effectiveness of the
+   neurosurgical team during DBS interventions []". Based on this, I
+   expected a more in depth evaluation of the system in respect to exactly
+   these goals. Unfortunately, the present evaluation of the paper does not
+   directly established experiments and measure to evaluate efficiency and
+   effectiveness of the team but restricts the evaluation to pure user
+   feedback on HCI design. The experiment is not clearly described (which
+   setup? which data? any repetitions?) which makes a clear discussion of
+   the results of the questionnaire difficult. 
+
+References
+
+   There is at least one significant work missing: 
+
+   S. Miocinovic, A. M. Noecker, C. B. Maks, C. R. Butson, and C. C.
+   McIntyre. Cicerone: stereotactic neurophysiological recording and deep
+   brain stimulation electrode placement software system. Acta Neurochir
+   Suppl (2007) 97(2): 561–567
+
+   The authors cite another paper of Miocinovic et al. and mention that the
+   proposed method is restricted to non-human primates. This is not true as
+   in the paper above the system has been adapted to human DBS procedures. 
+   This paper can be considered as one of the closest works to the paper
+   under review and should be therefore cited. 
+
+
+
+Final Judgment: Overall rating
+
+   4  (<b>Probably accept:</b> This paper will be acceptable with minor changes.)
+
+Final Judgment: Justification
+
+   All in all this is a valuable paper suitable for publication at SciVis.
+   Although there are some drawbacks and shortcomings (paper length,
+   evaluation, clarity of requirements) I vote for its publication at SciVis
+   after careful revision. The very short and a bit superficial evaluation
+   of the method is acceptable to a certain extend, as clinical tests during
+   real DBS interventions are difficult to realize and will be addressed by
+   the authors in future work.
+
+Ultimate Judgment
+
+   
+
+Expertise
+
+   3  (Expert)
+
+

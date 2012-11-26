@@ -1,0 +1,282 @@
+------------------------ Submission 114, Review 3 ------------------------
+
+Title: Guiding Deep Brain Stimulation Interventions by Fusing Multimodal Uncertainty Regions
+
+Reviewer:           primary
+
+Summary of all reviews from the Primary Reviewer
+
+  While the reviewers generally appreciated the significance of the
+  considered application and the care with which the system was designed
+  and integrated in the clinical workflow, they raised some important
+  questions about key aspects of the method and its evaluation by domain
+  experts. In particular, they found that the topics of fused visualization
+  and uncertainty lacked depth and clarity in the paper, despite the
+  prominent role that these aspects were supposed to play. More generally,
+  they found that the technical objectives were not stated clearly enough
+  to help the reader assess the proposed contribution. There was a general
+  sense that the evaluation lacked a clear assessment of the main features
+  of the system, in particular the integration of MER in the visualization,
+  and that the benefits of this system in the clinical setting were not
+  well documented. 
+
+  Overall, the paper received mix reviews and is somewhat of a borderline
+  case. However, I ultimately think that the strengths of the paper
+  outweigh (ever so slightly) the negative and I would therefore lean
+  toward accepting the paper.
+
+  Specifically:
+  1. clarify the technical objectives 
+  2. explain more fully the relationship between the objectives and the
+  contributions. 
+  3. provide a clear assessment of the main features of your system
+  4. clarify the benefits of this system in the clinical setting. 
+
+Recommendation from the Primary Reviewer 
+
+  4  (Probably accept)
+
+Expertise
+
+  3  (Knowledgeable)
+
+The Review 
+
+  The paper is very well written and self-contained despite its very
+  specialized nature. This is a system contribution that the authors have
+  motivated in the context of current practice. Lacking expertise in this
+  domain I am unable to assess the novelty of some of these contributions
+  but it transpires from the description that the system incorporates a
+  number of state of the art visualization techniques to ensure the
+  effectiveness of the system in a clinical setting. 
+
+  The main weakness of the paper (unfortunately) appears to lie in the
+  evaluation of the system. The expert user feedback on the benefit of MER
+  integration appears somewhat underwhelming. Since it transpires from the
+  introduction that the integration of this modality in the workflow of
+  neurosurgeons is a primary contribution of this method, this seems
+  problematic. In any case, it would be helpful to provide more insight
+  into the reasons behind this lack of enthusiasm for this approach.
+
+Overall Rating
+
+  4  (Probably accept: I would argue for accepting this paper.)
+
+
+------------------------ Submission 114, Review 1 ------------------------
+
+Title: Guiding Deep Brain Stimulation Interventions by Fusing Multimodal Uncertainty Regions
+
+Reviewer:           external
+
+Expertise
+
+  2  (Passing Knowledge)
+
+The Review 
+
+  The manuscript "Guiding Deep Brain Stimulation Interventions by Fusing
+  Multimodal Uncertainty Regions" presents a system for integrated
+  visualization of head CT and brain MRI data, along with microelectrode
+  recordings (MER), for use in planning and performing surgery for deep
+  brain stimulation. The system is fully implemented and has been evaluated
+  by showing it to five neurosurgeons and having them fill out a short
+  questionnaire.
+
+  Strengths of this paper include:
+
+   - The design seems to tightly follow the clinical workflow.
+   - The design decisions are plausibly motivated.
+   - Unlike in similar systems (such as [21]), results from MER are
+  directly integrated.
+   - The authors make an effort to consider uncertainty in their
+  visualization.
+   - Results have been shown to several neurosurgeons.
+
+  Weaknesses of this paper are that:
+
+   - Potentially, the target closeup visualization, which includes the
+  "fusing of multimodal uncertainty regions" from the paper title, could be
+  the most important contribution. Unfortunately, Fig.6 seems rather
+  confusing to me, and the text in Sec.3.4.1 does not make it easy to
+  understand how this visualization would contribute to a more accurate
+  localization in practice. In the evaluation sheet, either the
+  neurosurgeons were not asked about this central part of the system, or
+  the authors decided not to report this question and its answers.
+   - Similarly, the benefits from including MER are not fully evaluated.
+  Only 3 out of 5 neurosurgeons agreed that integrating this information
+  was helpful, and they were not asked if they agreed with the specific way
+  this information was visualized (using the thresholded disks embedded in
+  the 3D view).
+   - The neurosurgeons were asked to compare the system to their "old
+  system", but it does not become clear to the reader what the features of
+  that "old system" are.
+   - The user interface seems rather complex - several parameters are left
+  for "manual adjustment" by the user, and it is unclear if the surgery
+  team will have the time for that during the intervention.
+   - The authors state that the system should "reduce the cognitive load"
+  of the surgeon, but the specific benefits expected from the system are
+  not described in large enough detail. Is the system expected to make the
+  intervention faster (despite the described complexity in using it)?
+  Should it lead to higher success rates (if so, are there clinical studies
+  that indicate how many such interventions fail any why)?
+
+  Overall, I decided to rate this manuscript as "borderline"; given that
+  PacificVis does not expect journal level contributions, I have a slight
+  tendency towards acceptance.
+
+  Additional comments:
+
+  A more common visualization term for the "beads" would by "glyphs".
+
+  Typos:
+
+  p.1: saggital -> sagittal
+  p.2: provie -> provide
+  p.3: begin -> being
+
+Overall Rating
+
+  3  (Borderline: Overall I would not argue for accepting this paper.)
+
+
+------------------------ Submission 114, Review 2 ------------------------
+
+Title: Guiding Deep Brain Stimulation Interventions by Fusing Multimodal Uncertainty Regions
+
+Reviewer:           external
+
+Expertise
+
+  2  (Passing Knowledge)
+
+The Review 
+
+  The authors describe a system to guide deep brain stimulation therapy by
+  providing multiple views and audio data to aid the doctor in placing the
+  electrodes.
+
+  Overall rating:
+  The paper presents a system that contains many interesting tools to
+  display data during surgery. The main problem I see with this paper is
+  that, being a systems description, it does not provide enough content
+  about the usability of various parts of the system. The descriptions of
+  the individual parts seem sound, even though the authors do not provide a
+  lot of detail and, therefore, limited technical novelty is contained in
+  the paper.
+  One major drawback of the paper, which influenced my decision is the
+  fact, that the quality of the interventions is not measured. Neither in
+  the testing phase at the end of the paper, nor evaluated in the technical
+  description. This is especially due to the fact that a high accuracy is
+  claimed to be mandatory (approx. 1mm), where most measurements provided
+  during the surgery typically do not provide this accuracy in the
+  measurement.
+
+  Therefore, I leaning towards not accepting the paper but could be
+  convinced if some of my questions are answered in the final version.
+
+
+  Detailed comments:
+
+  Even thought the title talks about uncertain regions, I think this fact
+  is underrepresented in the system. It is mentioned that the segmentation
+  is "uncertain" as the brain shifted, but the brain is captured several
+  times during the surgery using CT to recalibrate all devices.
+
+  Section 3.2.1: "As MRI has a low signal-to-noise ratio, gradient-based
+  shading is not viable when visualizing the brain.": In my experience,
+  especially T1 images have a reasonable SNR and can be used easily for
+  volume representations, especially because in most cases, iso surfaces
+  can be computed and have shown to be stable enough.
+
+  "We present the access path to the surgeon by removing the structures
+  around the trajectory"
+  I am not sure whether removing the structure around the access path is
+  provides enough guidance. As far as I know, the access path is usually
+  identified using the local structures, which would have been removed in
+  this case. Please clarify.
+
+
+
+  Given the number of different views presented to the surgeon, it would be
+  of interest to see a study on which view is actually used in which stage
+  of the surgery. Even though an eye tracking study may reveal interesting
+  results, monitoring the surgeon closely may give initial hints on which
+  data is actually important.
+
+  This goes along with the performed tests. It would be nice to have a
+  comparison of the responses of the test candidates to the actual
+  performance when using the system compared to existing systems.
+
+  Especially the response to the question "The tools provided by the system
+  are easy to use" is seems to be an honest reply, but to make use of this
+  answer, it would be nice to have possible improvements in that regard
+  stated in the paper as well as what people miss in their old system that
+  makes them want to use this new system "in addition" instead of as a
+  replacement to the existing systems they have.
+
+
+
+Overall Rating
+
+  3  (Borderline: Overall I would not argue for accepting this paper.)
+
+
+------------------------ Submission 114, Review 4 ------------------------
+
+Title: Guiding Deep Brain Stimulation Interventions by Fusing Multimodal Uncertainty Regions
+
+Reviewer:           secondary
+
+Expertise
+
+  3  (Knowledgeable)
+
+The Review 
+
+  This paper presents an important application problem and a practical
+  solution. The focus is the fusion of data of different modalities in
+  surgical planning, and the most difficult modality to deal with is
+  perhaps MER. The paper is well-written, and easy to read. It also contain
+  an evaluation section. For such an application, this evaluation is
+  adequate as we should not expect neurosurgeons to spend more time to do
+  our "evaluation" as demanded by the VisWeek protocol for a design
+  study/application paper. Quality of a process does not assure the quality
+  of a piece of work. 
+
+  However, there is some scope to improve the paper.
+
+  1. I would like to see more discussions on fused visualization. In my
+  view, only Figure 7 strictly quality as fused uncertainty visualization,
+  while Figure 5 seems to focus on MER only (though the word fusing is
+  used). Figure 6 seems to be a fused visualization, but I am not sure
+  where is uncertainty.
+
+  2. Although the title has a phrase "Fusing Multimodal Uncertainty
+  Regions", the paper seems unsure about what exactly it tries to do. Is it
+  about fusing different modalities as in Figure 6 (through I am not sure
+  if all mentioned modalities are there)? Is it about the fusion of
+  different uncertainty values (as in Figure 7). Is it about fusing
+  different aspects of MER data as in Figure 5.
+
+  3. It is also not clear if the authors try to claim novelty from a
+  perspective of an application system or a set of apparently uncoordinated
+  views or visual designs in the paper. In fact, the first part of the
+  video shows a reasonable coordinated set of 4 views. Why not add such an
+  image (or even better screenshot) into the paper? 
+
+  It is an exciting application. The video is reasonably good. I would like
+  the paper to take us through different stages in the surgical planning to
+  show us how different views are used, and ideally through the same
+  system. Are the two parts of video from the same system?
+
+  I would score the paper 3.5.
+
+
+
+
+
+
+Overall Rating
+
+  4  (Probably accept: I would argue for accepting this paper.)

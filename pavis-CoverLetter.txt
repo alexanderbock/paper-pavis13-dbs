@@ -26,9 +26,6 @@ The last chapter of the introduction as well as the conclusions were rewritten t
 the technical objectives
 
   > 3. provide a clear assessment of the main features of your system
-<<Norbert>>
-
-
   > 4. clarify the benefits of this system in the clinical setting. 
 <<Norbert>>
 
@@ -72,7 +69,7 @@ The caption of Figure 6 was rewritten to hopefully remove the confusion.
   > The user interface seems rather complex - several parameters are left
   > for "manual adjustment" by the user, and it is unclear if the surgery
   > team will have the time for that during the intervention.
-
+Some of the not necessary parameters (Section 3.2.1) were removed.
   
   
   > The authors state that the system should "reduce the cognitive load"

@@ -15,7 +15,8 @@ objectives from the contributions and the solutions on how to achieve the object
   > of the system, in particular the integration of MER in the visualization,
   > and that the benefits of this system in the clinical setting were not
   > well documented.
-<<Norbert>>
+We went back to an expert with this comment and received a reply that we included in the
+text (Section 3).
 
 
   > Specifically:
@@ -27,17 +28,23 @@ the technical objectives
 
   > 3. provide a clear assessment of the main features of your system
   > 4. clarify the benefits of this system in the clinical setting. 
-<<Norbert>>
-
-
-  > The main weakness of the paper (unfortunately) appears to lie in the
-  > evaluation of the system. The expert user feedback on the benefit of MER
-  > integration appears somewhat underwhelming. Since it transpires from the
-  > introduction that the integration of this modality in the workflow of
-  > neurosurgeons is a primary contribution of this method, this seems
-  > problematic. In any case, it would be helpful to provide more insight
-  > into the reasons behind this lack of enthusiasm for this approach.
-<<Norbert>>
+Changed various places in the text to clarify the features and objectives. Furthermore,
+we received a statement from an expert:
+Multimodal image fusion and image guided surgerys are well established tools in the field
+of neurosurgery. In contrast to classical image fusion the depicted system provides
+additional functional MER information within a common framework of advanced 3D imaging
+technology. This new setup allows the surgeon for a rapid assessment and control of the
+target area. Up to now the different tools for aiding surgery are realized within separated
+units like MER toolbox, trajectory planning system and x-ray control system. Every system
+needs complex user interaction with a different user interface and provides information to
+the surgeon in a specific way. Due to limited capacity of the staff the user interaction as
+to be performed serially, which prolongs the exhaustive testing procedure for the patient.
+The new system integrates all of the desired technical information within one single user
+interface and provides a single advanced view containing all information for the surgeon.
+Thus, orientation of trajectories in respect to the target area and additional functional
+MER data become visible for the surgeon at the same time. This reduces mental workload of
+the surgeon and helps speeding up MER guided DBS surgery at a very high confidence level of
+target control.  
 
 
   > Potentially, the target closeup visualization, which includes the
@@ -48,16 +55,8 @@ the technical objectives
   > localization in practice. In the evaluation sheet, either the
   > neurosurgeons were not asked about this central part of the system, or
   > the authors decided not to report this question and its answers.
-The caption of Figure 6 was rewritten to hopefully remove the confusion.
-<<Sec.3.4.1>>
-
-
-  > Similarly, the benefits from including MER are not fully evaluated.
-  > Only 3 out of 5 neurosurgeons agreed that integrating this information
-  > was helpful, and they were not asked if they agreed with the specific way
-  > this information was visualized (using the thresholded disks embedded in
-  > the 3D view).
-<<Norbert>>
+The caption of Figure 6 was rewritten and the Section 3.4.1 improved to hopefully remove
+the confusion.
 
 
   > The neurosurgeons were asked to compare the system to their "old
@@ -78,7 +77,8 @@ Some of the not necessary parameters (Section 3.2.1) were removed.
   > intervention faster (despite the described complexity in using it)?
   > Should it lead to higher success rates (if so, are there clinical studies
   > that indicate how many such interventions fail any why)?
-<<Norbert>>
+Please see the statement in the question above. Parts of this was included in the text
+in various places.
 
 
   > A more common visualization term for the "beads" would by "glyphs".

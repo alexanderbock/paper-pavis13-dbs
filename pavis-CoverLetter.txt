@@ -1,3 +1,22 @@
+Dear coordinator of the submission,
+
+we would like to thank you and your co-reviewers for the work you have done and the many
+valuable comments we have received regarding our submission. During the revision, we did
+our best in order to address all of the issues you have brought up. Below, you will find
+our detailed replies to the points of criticism brought up by the reviewers. The
+remainder of this cover letter is structured as follows. First, we cite the comments of
+the reviewers, and then we explain the changes we have undertaken in order to address
+these comments. All replies are structured based on the specific reviewers, whereby we
+start with the summary review. If multiple reviewers raised the same concern, e.g.,
+missing references, this point is only discussed at the first appearance and omitted
+later.
+
+We hope that all comments have been addressed as expected.
+
+Sincerely yours,
+   The Authors.
+   
+   
   > In particular, they found that the topics of fused visualization
   > and uncertainty lacked depth and clarity in the paper, despite the
   > prominent role that these aspects were supposed to play.
@@ -28,7 +47,7 @@ the technical objectives
 
   > 3. provide a clear assessment of the main features of your system
   > 4. clarify the benefits of this system in the clinical setting. 
-Changed various places in the text to clarify the features and objectives. Furthermore,
+Changed various places (Section 3) in the text to clarify the features and objectives. Furthermore,
 we received a statement from an expert:
 Multimodal image fusion and image guided surgerys are well established tools in the field
 of neurosurgery. In contrast to classical image fusion the depicted system provides
